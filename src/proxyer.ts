@@ -24,7 +24,7 @@ export class Proxyer {
 
 		if(pathname.startsWith("/home") || pathname.startsWith("/post/list")) {
 			// 5분간 캐시 유지
-			return fetchWithEdgeCaching(300);
+			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/view")) {
 			// 이미지 뷰어로 접속 시 1년간 캐시 유지
