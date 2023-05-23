@@ -23,12 +23,12 @@ export class Proxyer {
 
 
 		if(pathname.startsWith("/home")) {
-			// 메인화면으로 접속 시 5분간 캐시 유지
-			return fetchWithEdgeCaching(300);
+			// 메인화면으로 접속 시 캐시하지 않기
+			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/list")) {
-			// 이미지 목록으로 접속 시 5분간 캐시 유지
-			return fetchWithEdgeCaching(300);
+			// 이미지 목록으로 접속 시 캐시하지 않기
+			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/view")) {
 			// 이미지 뷰어로 접속 시 1년간 캐시 유지
