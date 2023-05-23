@@ -22,12 +22,8 @@ export class Proxyer {
 		};
 
 
-		if(pathname.startsWith("/home")) {
-			// 메인화면으로 접속 시 캐시하지 않기
-			return fetchWithEdgeCaching(0);
-		}
-		if(pathname.startsWith("/post/list")) {
-			// 이미지 목록으로 접속 시 캐시하지 않기
+		if(pathname.startsWith("/home") || pathname.startsWith("/post/list")) {
+			// 캐시하지 않기
 			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/view")) {
