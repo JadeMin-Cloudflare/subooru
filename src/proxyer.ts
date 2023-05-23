@@ -22,8 +22,12 @@ export class Proxyer {
 		};
 
 
-		if(pathname.startsWith("/home") || pathname.startsWith("/post/list")) {
-			// 캐시 유지하지 않기 (유저 캐시에 의존)
+		if(
+			pathname.startsWith("/home") ||
+			pathname.startsWith("/post/list") ||
+			pathname.startsWith("/tags")
+		) {
+			// 캐시 유지하지 않기 (로딩 속도는 브라우저 캐시에 의존)
 			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/view")) {
