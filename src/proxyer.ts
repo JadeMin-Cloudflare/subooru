@@ -23,7 +23,7 @@ export class Proxyer {
 
 
 		if(pathname.startsWith("/home") || pathname.startsWith("/post/list")) {
-			// 5분간 캐시 유지
+			// 캐시 유지하지 않기
 			return fetchWithEdgeCaching(0);
 		}
 		if(pathname.startsWith("/post/view")) {
