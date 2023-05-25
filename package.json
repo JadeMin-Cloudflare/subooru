@@ -2,12 +2,12 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"publish": "wrangler publish",
-		"test": "wrangler dev -l"
+		"publish": "wrangler deploy",
+		"test": "wrangler dev"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20230419.0",
+		"@cloudflare/workers-types": "^4.20230518.0",
 		"url-join": "^5.0.0",
-		"wrangler": "^2.20.0"
+		"wrangler": "^3.0.1"
 	}
 }
