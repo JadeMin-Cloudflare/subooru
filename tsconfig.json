@@ -3,7 +3,6 @@
 		"types": ["@cloudflare/workers-types"],
 		
 		"strict": true,
-		"alwaysStrict": true,
 
 		"module": "NodeNext",
 		"target": "ESNext",
