@@ -37,6 +37,7 @@ export class Proxyer {
 			
 			pathname.startsWith("/ext") ||
 			pathname.startsWith("/data") ||
+			pathname.startsWith("/_thumbs") ||
 			pathname.startsWith("/_images")
 		) {
 			// 이미지 뷰어로 접속 시 1년간 캐시 유지
