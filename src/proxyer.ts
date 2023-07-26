@@ -34,6 +34,8 @@ export class Proxyer {
 		if(
 			pathname.startsWith("/home") ||
 			pathname.startsWith("/post/view") ||
+			pathname.startsWith("/post/next") ||
+			pathname.startsWith("/post/prev") ||
 			
 			pathname.startsWith("/ext") ||
 			pathname.startsWith("/data") ||
@@ -48,8 +50,8 @@ export class Proxyer {
 		return new Response(NotFound, {
 			status: 404,
 			headers: {
-				"content-type": "text/html;charset=UTF-8"
+				"Content-Type": "text/html;charset=UTF-8"
 			}
-		});
+		} as const);
 	};
 };
