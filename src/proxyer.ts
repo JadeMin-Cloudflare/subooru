@@ -1,5 +1,5 @@
 import joinUrl from 'url-join';
-import NotFound from "./404.tsx";
+import NotFound from "./404.html";
 
 
 

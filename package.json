@@ -6,8 +6,6 @@
 		"test": "wrangler dev"
 	},
 	"dependencies": {
-		"preact": "^10.16.0",
-		"preact-render-to-string": "^6.2.0",
 		"url-join": "^5.0.0"
 	},
 	"devDependencies": {
