@@ -13,7 +13,7 @@ export default function NotFound() {
 				<meta charSet="utf-8"/>
 				<title>404 - Not Found</title>
 			</head>
-			<body style="text-align: center;">
+			<body style={{textAlign: "center"}}>
 				<h1>404</h1>
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
 				<details>
