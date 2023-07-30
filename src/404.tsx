@@ -18,10 +18,14 @@ export default function NotFound() {
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
 				<details>
 					<summary>Server Debug</summary>
-					<p>
-						Date/Time<br/>
-						{currentTime.toFormat("yyyy-MM-dd a h:mm")}
-					</p>
+					<table>
+						<tr>
+							<th scope="col">Date/Time</th>
+						</tr>
+						<tr>
+            				<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
+						</tr>
+					</table>
 				</details>
 			</body>
 		</html>
