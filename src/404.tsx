@@ -40,15 +40,15 @@ export default function NotFound(requestUrl: URL) {
 					<table>
 						<thead>
 							<tr>
-								<th>Date/Time</th>
 								<th>Timestamp</th>
+								<th>Date/Time</th>
 								<th>Request</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
 								<td>{currentTime.toMillis()}</td>
+								<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
 								<td>{requestUrl.pathname}</td>
 							</tr>
 						</tbody>
