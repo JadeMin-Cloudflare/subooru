@@ -2,8 +2,6 @@ import { h } from 'preact';
 import { renderToStaticMarkup } from 'preact-render-to-string';
 import { DateTime } from 'luxon';
 
-import CSS from "./404.css";
-
 
 
 export default function NotFound() {
@@ -14,7 +12,25 @@ export default function NotFound() {
 			<head>
 				<meta charSet="utf-8"/>
 				<title>404 - Not Found</title>
-				<style type="text/css">{ CSS }</style>
+				<style type="text/css">
+					{`
+						body {
+							text-align: center;
+						}
+						
+						table {
+							margin-left: auto;
+							margin-right: auto;
+							border: 1px solid black;
+							border-collapse: collapse;
+						}
+						
+						table th, table td {
+							border: 1px solid black;
+							border-collapse: collapse;
+						}
+					`}
+				</style>
 			</head>
 			<body>
 				<h1>404</h1>
