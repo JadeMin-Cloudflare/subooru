@@ -6,7 +6,7 @@ import { DateTime } from 'luxon';
 
 export default function NotFound() {
 	const currentTime = DateTime.now().setLocale("ko");
-	
+
 	return renderToStaticMarkup(
 		<html lang="ko">
 			<head>
@@ -17,7 +17,7 @@ export default function NotFound() {
 				<h1>404</h1>
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
 				<footer>
-					{currentTime.toFormat("yyyy-MM-dd a HH:mm")}
+					{currentTime.toFormat("yyyy-MM-dd a h:m")}
 				</footer>
 			</body>
 		</html>
