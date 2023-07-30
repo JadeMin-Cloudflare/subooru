@@ -16,12 +16,13 @@ export default function NotFound() {
 			<body style="text-align: center;">
 				<h1>404</h1>
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
-				<footer>
+				<details>
+					<summary>Server Debug</summary>
 					<p>
-						서버 시간<br/>
+						Date/Time<br/>
 						{currentTime.toFormat("yyyy-MM-dd a h:m")}
 					</p>
-				</footer>
+				</details>
 			</body>
 		</html>
 	);
