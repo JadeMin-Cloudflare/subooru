@@ -22,6 +22,8 @@ export default function NotFound() {
 						style={{
 							marginLeft: "auto",
 							marginRight: "auto",
+							border: "1px solid black",
+							borderCollapse: "collapse",
 						} as const}
 					>
 						<tr>
