@@ -49,7 +49,7 @@ export default function NotFound(requestUrl: URL) {
 							<tr>
 								<td>{currentTime.toMillis()}</td>
 								<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
-								<td>{requestUrl.pathname}</td>
+								<td>{decodeURIComponent(requestUrl.pathname)}</td>
 							</tr>
 						</tbody>
 					</table>
