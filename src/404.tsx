@@ -36,7 +36,7 @@ export default function NotFound() {
 				<h1>404</h1>
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
 				<details>
-					<summary>Server Debug</summary>
+					<summary>Server debug</summary>
 					<table>
 						<thead>
 							<tr>
