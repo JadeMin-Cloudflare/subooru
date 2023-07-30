@@ -26,14 +26,14 @@ export default function NotFound() {
 							borderCollapse: "collapse",
 						} as const}
 					>
-						<tr>
-							<th>Date/Time</th>
-							<th>Timestamp</th>
-						</tr>
-						<tr>
-            				<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
-							<td>{currentTime.toMillis()}</td>
-						</tr>
+						<thead>
+							<tr>Date/Time</tr>
+							<tr>Timestamp</tr>
+						</thead>
+						<tbody>
+            				<tr>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</tr>
+							<tr>{currentTime.toMillis()}</tr>
+						</tbody>
 					</table>
 				</details>
 			</body>
