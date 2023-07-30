@@ -10,7 +10,8 @@ export class Proxyer {
 	};
 
 	public async fetch(request: Request): Promise<Response> {
-		const { pathname, search } = new URL(request.url);
+		const requestUrl = new URL(request.url);
+		const { pathname, search } = requestUrl;
 	
 		const fetchWithEdgeCaching = (cacheTtl: number): Promise<Response> => {
 			return fetch(joinUrl(this.originUrl, pathname, search), {
@@ -47,7 +48,7 @@ export class Proxyer {
 		}
 		
 		// 이외의 모든 요청은 비활성화
-		return new Response(NotFound(), {
+		return new Response(NotFound(requestUrl), {
 			status: 404,
 			headers: {
 				"Content-Type": "text/html;charset=UTF-8"

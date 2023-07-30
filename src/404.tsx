@@ -4,7 +4,7 @@ import { DateTime } from 'luxon';
 
 
 
-export default function NotFound() {
+export default function NotFound(requestUrl: URL) {
 	const currentTime = DateTime.now().setLocale("ko");
 
 	return renderToStaticMarkup(
@@ -42,12 +42,14 @@ export default function NotFound() {
 							<tr>
 								<th>Date/Time</th>
 								<th>Timestamp</th>
+								<th>Request</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
 								<td>{currentTime.toMillis()}</td>
+								<td>{requestUrl.pathname}</td>
 							</tr>
 						</tbody>
 					</table>
