@@ -20,7 +20,7 @@ export default function NotFound() {
 					<summary>Server Debug</summary>
 					<p>
 						Date/Time<br/>
-						{currentTime.toFormat("yyyy-MM-dd a h:m")}
+						{currentTime.toFormat("yyyy-MM-dd a h:mm")}
 					</p>
 				</details>
 			</body>
