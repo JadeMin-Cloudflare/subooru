@@ -1,5 +1,5 @@
 import joinUrl from 'url-join';
-import NotFound from "./404.html";
+import NotFound from "./404.tsx";
 
 
 
@@ -47,7 +47,7 @@ export class Proxyer {
 		}
 		
 		// 이외의 모든 요청은 비활성화
-		return new Response(NotFound, {
+		return new Response(NotFound(), {
 			status: 404,
 			headers: {
 				"Content-Type": "text/html;charset=UTF-8"
