@@ -5,6 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  luxon:
+    specifier: ^3.3.0
+    version: 3.3.0
+  preact:
+    specifier: ^10.16.0
+    version: 10.16.0
+  preact-render-to-string:
+    specifier: ^6.2.0
+    version: 6.2.0(preact@10.16.0)
   url-join:
     specifier: ^5.0.0
     version: 5.0.0
@@ -13,6 +22,9 @@ devDependencies:
   '@cloudflare/workers-types':
     specifier: ^4.20230724.0
     version: 4.20230724.0
+  '@types/luxon':
+    specifier: ^3.3.1
+    version: 3.3.1
   '@types/react':
     specifier: ^18.2.16
     version: 18.2.16
@@ -295,6 +307,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@types/luxon@3.3.1:
+    resolution: {integrity: sha512-XOS5nBcgEeP2PpcqJHjCWhUCAzGfXIU8ILOSLpx2FhxqMW9KdxgCGXNOEKGVBfveKtIpztHzKK5vSRVLyW/NqA==}
+    dev: true
 
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -625,6 +641,11 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /luxon@3.3.0:
+    resolution: {integrity: sha512-An0UCfG/rSiqtAIiBPO0Y9/zAnHUZxAMiCpTd5h2smgsj7GGmcenvrvww2cqNA8/4A5ZrD1gJpHN2mIHZQF+Mg==}
+    engines: {node: '>=12'}
+    dev: false
+
   /magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
@@ -727,6 +748,19 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /preact-render-to-string@6.2.0(preact@10.16.0):
+    resolution: {integrity: sha512-51HDkgWGssQvWhAXE6xWGSFgqXx+qzQPKatLBVm5Uxl2Bq8RHz+CcNMTWz3kjGNM8PL+9GZZfTLGHyR1wu6ZuA==}
+    peerDependencies:
+      preact: '>=10'
+    dependencies:
+      preact: 10.16.0
+      pretty-format: 3.8.0
+    dev: false
+
+  /preact@10.16.0:
+    resolution: {integrity: sha512-XTSj3dJ4roKIC93pald6rWuB2qQJO9gO2iLLyTe87MrjQN+HklueLsmskbywEWqCHlclgz3/M4YLL2iBr9UmMA==}
+    dev: false
+
   /prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
     engines: {node: '>=10'}
@@ -745,6 +779,10 @@ packages:
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
     dev: true
+
+  /pretty-format@3.8.0:
+    resolution: {integrity: sha512-WuxUnVtlWL1OfZFQFuqvnvs6MiAGk9UNsBostyBOB0Is9wb5uRESevA6rnl/rkksXaGX3GzZhPup5d6Vp1nFew==}
+    dev: false
 
   /printable-characters@1.0.42:
     resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
