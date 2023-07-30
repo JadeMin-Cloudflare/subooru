@@ -27,8 +27,8 @@ export default function NotFound() {
 						} as const}
 					>
 						<tr>
-							<th scope="col">Date/Time</th>
-							<th scope="col">Timestamp</th>
+							<th>Date/Time</th>
+							<th>Timestamp</th>
 						</tr>
 						<tr>
             				<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
