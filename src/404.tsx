@@ -18,7 +18,10 @@ export default function NotFound() {
 				<p>해당 페이지 및 기능은 현재 비활성화되어 있습니다.</p>
 				<details>
 					<summary>Server Debug</summary>
-					<table>
+					<table style={{
+						marginLeft: "auto",
+						marginRight: "auto",
+					}}>
 						<tr>
 							<th scope="col">Date/Time</th>
 						</tr>
