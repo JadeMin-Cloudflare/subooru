@@ -26,9 +26,11 @@ export default function NotFound() {
 					>
 						<tr>
 							<th scope="col">Date/Time</th>
+							<th scope="col">Timestamp</th>
 						</tr>
 						<tr>
             				<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
+							<td>{currentTime.toMillis()}</td>
 						</tr>
 					</table>
 				</details>
