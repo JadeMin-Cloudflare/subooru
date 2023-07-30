@@ -22,7 +22,7 @@ export default function NotFound() {
 						style={{
 							marginLeft: "auto",
 							marginRight: "auto",
-						}}
+						} as const}
 					>
 						<tr>
 							<th scope="col">Date/Time</th>
