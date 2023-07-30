@@ -25,12 +25,16 @@ export default function NotFound() {
 						} as const}
 					>
 						<thead>
-							<tr>Date/Time</tr>
-							<tr>Timestamp</tr>
+							<tr>
+								<th>Date/Time</th>
+								<th>Timestamp</th>
+							</tr>
 						</thead>
 						<tbody>
-            				<tr>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</tr>
-							<tr>{currentTime.toMillis()}</tr>
+							<tr>
+								<td>{currentTime.toFormat("yyyy-MM-dd a h:mm")}</td>
+								<td>{currentTime.toMillis()}</td>
+							</tr>
 						</tbody>
 					</table>
 				</details>
