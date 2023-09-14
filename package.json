@@ -6,16 +6,16 @@
 		"test": "wrangler dev"
 	},
 	"dependencies": {
-		"luxon": "^3.4.2",
+		"luxon": "^3.4.3",
 		"preact": "^10.17.1",
 		"preact-render-to-string": "^6.2.1",
 		"url-join": "^5.0.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "^4.20230821.0",
+		"@cloudflare/workers-types": "^4.20230904.0",
 		"@types/luxon": "^3.3.2",
 		"@types/react": "^18.2.21",
 		"@types/react-dom": "^18.2.7",
-		"wrangler": "^3.6.0"
+		"wrangler": "^3.8.0"
 	}
 }
